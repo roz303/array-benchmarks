@@ -23,7 +23,7 @@ public class Main {
                 }
             }
             long loopend = System.nanoTime();
-            System.out.println("Epoch " + loopcounter + " completed. Avergage loop time: " + ((loopend - loopstart)/1000000) + " milliseoconds.");
+            System.out.println("Epoch " + loopcounter + " completed. Avergage loop time: " + ((loopend - loopstart)/1000000.0) + " milliseoconds.");
             loopcounter++;
         }
 
