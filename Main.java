@@ -13,7 +13,7 @@ public class Main {
             long loopstart = System.nanoTime();
             for (int j = 0; j < camsize; j++)
             {
-                for (int k = 0; k < 1; k++)
+                for (int k = 0; k < camsize; k++)
                 {
                     camSet[i][j][k] = i * j * k;
                     if (camSet[i][j][k] % 33 == 0)
