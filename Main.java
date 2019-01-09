@@ -23,13 +23,13 @@ public class Main {
                 }
             }
             long loopend = System.nanoTime();
-            System.out.println("Epoch " + loopcounter + " completed. Avergage loop time: " + ((loopend - loopstart) / 1000000000.0) + " nanoseoconds.");
+            System.out.println("Epoch " + loopcounter + " completed. Avergage loop time: " + ((loopend - loopstart)/1000000) + " milliseoconds.");
             loopcounter++;
         }
 
         long endTime = System.nanoTime();
         long elapsed = endTime - startTime;
-        System.out.println("Entire iteration took: " + (elapsed / 1000000000.0) + " seconds.");
+        System.out.println("Entire iteration took: " +(elapsed / 1000000.0) + " milliseconds.");
 
         long tdstart = System.nanoTime();
         int arsize = 11585;
@@ -48,6 +48,6 @@ public class Main {
 
         long tdend = System.nanoTime();
         long total = tdend - tdstart;
-        System.out.println("Equivalent 2d array time: " + total / 1000000000.0);
+        System.out.println("Equivalent 2d array time: "  + total / 1000000.0 + " milliseconds");
     }
 }
